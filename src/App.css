@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@900&family=Poppins:wght@300;400;500;600;700;800&family=Rubik:wght@600&family=Ubuntu:wght@700&family=Montserrat:wght@500;600;700;800&display=swap');
+
+.navbar-brand{
+  font-family: 'Rubik';
+  font-size: 1.5em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-link{
+  font-family: 'Rubik';
+  font-size: 0.90em;
+  font-weight: 600;
+  color: #747d8c;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+  font-family: 'Ubuntu';
+  font-size: 2em;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h4{
+  font-family: 'Ubuntu';
+  font-size: 1.3em;
 }
 
-.App-link {
-  color: #61dafb;
+p{
+  font-size: 0.85em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-box{
+  background: #fff;
+}
+
+.submitList{
+  width: 48%;
+}
+
+.submitList .list{
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.status{
+  background: #70a1ff;
+  font-size: 13px;
+  color: #fff;
+}
+
+
+@media only screen and (max-width: 1080px){
+  .submitList{
+    width: 100%;
+  } 
 }

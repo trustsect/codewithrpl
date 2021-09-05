@@ -1,25 +1,23 @@
-import logo from './logo.svg';
+import CoreComponent from './components/CoreComponent';
+import { Container } from 'react-bootstrap'
+import React from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './App.css';
+AOS.init();
 
-function App() {
+class App extends React.Component {
+  componentDidMount() {
+    document.body.style.backgroundColor = "#f1f2f6"
+  }
+  render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <Container className="pt-5">
+    <CoreComponent />
+  </Container>
   );
+  }
 }
+
 
 export default App;
